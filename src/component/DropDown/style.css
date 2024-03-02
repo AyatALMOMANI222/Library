@@ -1,0 +1,64 @@
+.dropdown-container {
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  font-family: Arial, Helvetica, sans-serif;
+  cursor: pointer;
+}
+.dropdown-container .opt {
+  border: 1px solid rgba(235, 236, 242, 1);
+  padding: 10px;
+  font-size: 14px;
+  color: rgba(20, 36, 82, 1);
+}
+.dropdown-container .des {
+  padding-bottom: 10px;
+  color: rgba(20, 36, 82, 1);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+.dropdown-container .select {
+  display: flex;
+  flex-direction: row;
+  color: rgba(20, 36, 82, 1);
+  border: 1px solid rgba(235, 236, 242, 1);
+  justify-content: space-between;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  align-items: center;
+}
+.dropdown-container .options {
+  position: absolute;
+  top: 75px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  height: 300px;
+  overflow: overlay;
+  background-color: white;
+}
+.default {
+  color: rgba(186, 189, 204, 1);
+}
+
+.dropdown-container .options::-webkit-scrollbar {
+  width: 3px;
+}
+
+.dropdown-container .options::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.dropdown-container .options::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+.dropdown-container .options::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+.dropdown-container .selected {
+  background-color: rgba(235, 236, 242, 1);
+}
